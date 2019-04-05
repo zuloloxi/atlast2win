@@ -1,0 +1,38 @@
+﻿Build started 04/04/2019 10:07:21.
+     1>Project "C:\A15\facultate\forth\atlast-2.0\build\atlast2\atlast2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\atlast2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\A15\Microsoft_Visual_Studio_10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /FAcs /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\atlast.c
+         atlast.c
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(72): warning C4005: 'max' : macro redefinition
+                 c:\a15\microsoft_visual_studio_10.0\vc\include\stdlib.h(854) : see previous definition of 'max'
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(73): warning C4005: 'min' : macro redefinition
+                 c:\a15\microsoft_visual_studio_10.0\vc\include\stdlib.h(855) : see previous definition of 'min'
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(436): warning C4101: 'a' : unreferenced local variable
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(876): warning C4244: '=' : conversion from 'stackitem' to 'unsigned char', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(894): warning C4244: '=' : conversion from 'stackitem' to 'unsigned char', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(970): warning C4244: '=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(971): warning C4244: '=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(982): warning C4244: '=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(984): warning C4244: '=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(1008): warning C4244: '=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(1013): warning C4244: '=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(1020): warning C4244: '*=' : conversion from 'stackitem' to 'int', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(1122): warning C4244: '=' : conversion from 'stackitem' to 'long', possible loss of data
+     1>c:\a15\facultate\forth\atlast-2.0\atlast.c(1341): warning C4244: '=' : conversion from 'stackitem' to 'atl_real', possible loss of data
+       Link:
+         C:\A15\Microsoft_Visual_Studio_10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\A15\facultate\forth\atlast-2.0\build\atlast2\Debug\atlast2.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\atlast2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\A15\facultate\forth\atlast-2.0\build\atlast2\Debug\atlast2.pdb" /MAPINFO:EXPORTS /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /FIXED /NXCOMPAT /IMPLIB:"C:\A15\facultate\forth\atlast-2.0\build\atlast2\Debug\atlast2.lib" /MACHINE:X86 Debug\atlast.obj
+         Debug\atlmain.obj
+     1>atlast.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         atlast2.vcxproj -> C:\A15\facultate\forth\atlast-2.0\build\atlast2\Debug\atlast2.exe
+       Manifest:
+         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\A15\facultate\forth\atlast-2.0\build\atlast2\Debug\atlast2.exe;#1" /manifest Debug\atlast2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\atlast2.unsuccessfulbuild".
+         Touching "Debug\atlast2.lastbuildstate".
+     1>Done Building Project "C:\A15\facultate\forth\atlast-2.0\build\atlast2\atlast2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.74

@@ -142,6 +142,7 @@ Exported stackitem *heaptop;	      /* Top of heap */
     /* The dictionary */
 
 Exported dictword *dict = NULL;       /* Dictionary chain head */
+/*Exported dictword *dict = NULL;*/       /* Dictionary chain head */
 Exported dictword *dictprot = NULL;   /* First protected item in dictionary */
 
     /* The temporary string buffers */
@@ -432,13 +433,15 @@ static dictword *lookup(tkname)
   char *tkname;
 {
     dictword *dw = dict;
-
+	char a;
     ucase(tkname);		      /* Force name to upper case */
     while (dw != NULL) {
 	if (!(dw->wname[0] & WORDHIDDEN) &&
 	     (strcmp(dw->wname + 1, tkname) == 0)) {
 #ifdef WORDSUSED
-	    *(dw->wname) |= WORDUSED; /* Mark this word used */
+		/*a=dw->wname[0] | WORDUSED;
+	    memcpy(&dw->wname[0],&a ,1);*/ /* Mark this word used */
+	 *(dw->wname) |= WORDUSED;   /* bug access violation with msvc */
 #endif
 	    break;
 	}
