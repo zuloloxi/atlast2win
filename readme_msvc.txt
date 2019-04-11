@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #added debug option
 # compiler code C with msvc VS2010
 # cl -c  atlmain.c
@@ -17,3 +18,13 @@ CFLAGS = -c /W3 /nologo $(CVARS) -I. -Iproto -DHAVE_PATHDEF -DWIN32 \
 cl -c /FAcs atlmain.c 
 cl -c /FAcs atlast.c
 cl -o atlast atlmain.obj atlast.obj /link /subsystem:console  /DYNAMICBASE:NO /FIXED /NXCOMPAT /MACHINE:X86 /DEBUG /MAP /MAPINFO:EXPORTS
+=======
+rem compiler code C with msvc VS2010
+cl -c  atlmain.c
+cl -c  atlast.c
+rem gen .exe binary 
+cl -o atlast  atlmain.obj atlast.obj
+
+2019/04/01
+access violation bug in lookup detected
+>>>>>>> 9dddeb13438ae0340acffbabe7082865733ab64d
